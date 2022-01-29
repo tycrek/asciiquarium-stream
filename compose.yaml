@@ -1,0 +1,11 @@
+services:
+  asciiquarium:
+    build: .
+    command: ./run.sh
+    container_name: asciiquarium
+    restart: unless-stopped
+    tmpfs: /tmp
+    working_dir: /opt/asciiquarium
+    tty: true
+    environment:
+      - STREAM_KEY=
