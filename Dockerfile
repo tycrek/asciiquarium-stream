@@ -12,6 +12,7 @@ RUN chmod +x ./run.sh
 RUN chmod +x ./stream.sh
 
 # Add asciiquarium PPA
+RUN apt install software-properties-common
 RUN add-apt-repository ppa:ytvwld/asciiquarium
 RUN apt update
 
