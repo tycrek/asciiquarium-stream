@@ -1,5 +1,9 @@
 #!/bin/bash
 
+
+# Install ffmpeg
+snap install ffmpeg
+
 export DISPLAY=:1
 Xvfb :1 -screen 0 1280x720x16 &
 sleep 1
