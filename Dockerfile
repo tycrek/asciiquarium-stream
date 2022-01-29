@@ -7,8 +7,9 @@ WORKDIR /opt/asciiquarium/
 # Copy files
 COPY . ./
 
-# Make scipts executable
-RUN chmod +x ./virtual-display.sh
+# Make scripts executable
+RUN chmod +x ./run.sh
+RUN chmod +x ./stream.sh
 
 # Add asciiquarium PPA
 RUN sudo add-apt-repository ppa:ytvwld/asciiquarium
