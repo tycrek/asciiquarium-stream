@@ -12,12 +12,12 @@ RUN chmod +x ./run.sh
 RUN chmod +x ./stream.sh
 
 # Add asciiquarium PPA
-RUN apt install software-properties-common
+RUN apt update && apt install -y software-properties-common
 RUN add-apt-repository ppa:ytvwld/asciiquarium
 RUN apt update
 
 # Install asciiquarium and others
-RUN apt install lightdm xterm xvfb screen asciiquarium
+RUN apt install -y lightdm xterm xvfb screen asciiquarium
 
 # Install ffmpeg
 RUN snap install ffmpeg
