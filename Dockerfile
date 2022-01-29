@@ -21,7 +21,7 @@ RUN apt update
 RUN DEBIAN_FRONTEND=noninteractive apt install -y --no-install-recommends tzdata
 
 # Install asciiquarium and others
-RUN apt install -y --no-install-recommends lightdm xterm xvfb screen asciiquarium
+RUN apt install -y --no-install-recommends lightdm xterm xvfb screen ffmpeg asciiquarium
 
 # Copy xorg.conf to /usr/share/X11/xorg.conf.d/
 COPY xorg.conf /usr/share/X11/xorg.conf.d/
