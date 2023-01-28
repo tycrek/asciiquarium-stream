@@ -140,3 +140,12 @@ These two posts were incredibly helpful in getting this working:
 
 - [Virtual display](https://askubuntu.com/a/1111898/562438) (specific answer linked; "correct" answer was not tested. Read comments on post for info)
 - [Stream to Twitch using Linux command line](https://www.addictivetips.com/ubuntu-linux-tips/stream-to-twitch-command-line-linux/) (I ignored most of the guide and just copy/pasted the section with `streaming()`. I improved the formatting and comments, however)
+
+
+### other links that helped (bookmark dump during 2023-01 cleanup)
+
+- https://askubuntu.com/questions/453109/add-fake-display-when-no-monitor-is-plugged-in
+- https://unix.stackexchange.com/questions/87107/using-ffmpeg-to-stream-to-twitch-tv-with-desktop-audio
+- https://askubuntu.com/questions/121014/how-do-i-list-connected-displays-using-the-command-line
+- https://blog.twitch.tv/en/2017/10/10/live-video-transmuxing-transcoding-f-fmpeg-vs-twitch-transcoder-part-i-489c1c125f28/
+- https://www.addictivetips.com/ubuntu-linux-tips/stream-to-twitch-command-line-linux/
