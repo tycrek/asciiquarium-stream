@@ -1,5 +1,15 @@
 # asciiquarium-stream
+
 Files and guide on streaming asciiquarium to Twitch
+
+## Usage
+
+1. Clone this repo
+2. Add your Twitch stream key to `compose.yaml`
+3. Optionally, you may [set a server](https://github.com/tycrek/asciiquarium-stream/blob/master/stream.sh#L32) to use
+4. Run `docker compose up`
+
+## Old readme below
 
 [**Watch stream on Twitch**](https://twitch.tv/asciiquarium) or ~~[**see how it works**][reddit thread]~~ see below.
 
