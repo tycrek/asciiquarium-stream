@@ -1,11 +1,15 @@
 #!/bin/bash
 
-export DISPLAY=:1
+# Install fake monitor
+echo "[1/3] Installing fake monitor"
 Xvfb :1 -screen 0 1280x720x16 &
 sleep 1
 
-# Start the stream in a screen session
-screen -dmS asciiquarium -s bash "./stream.sh"
-
 # Start asciiquarium
-DISPLAY=:1 xterm -geometry 212x55+0+0 -e asciiquarium &
+echo "[2/3] Starting asciiquarium in xterm"
+DISPLAY=:1 xterm -geometry 212x55+0+0 -e /usr/games/asciiquarium &
+sleep 1
+
+# Start the stream
+echo "[3/3] Streaming"
+./stream.sh
